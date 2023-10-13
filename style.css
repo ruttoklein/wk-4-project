@@ -1,5 +1,6 @@
 body {
-    background-color:green ;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
   }
@@ -11,7 +12,7 @@ body {
   }
   
   .infoDiv {
-    background-color: #FFC300;
+    background-color: lightcoral;
     border: 1px solid #FF5733; 
     box-shadow: 2px 2px 5px #FF6347; 
     margin: 10px;
@@ -22,7 +23,7 @@ body {
   }
   
   .infoDiv:hover {
-    background-color: #FF5733; 
+    background-color: green; 
     transform: scale(1.05);
   }
   
