@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
         console.log(team);
         teamsContainer.appendChild(infoDiv);
+        
      });
    });
 });
