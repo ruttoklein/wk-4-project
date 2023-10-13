@@ -21,33 +21,33 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
           </div>
         `;
-        // teamsContainer.appendChild(infoDiv);        
-        // const teamName = infoDiv.querySelector(".team-name");
-        // const teamDetails = infoDiv.querySelector(".team-details");
-        // teamName.addEventListener("click", () => {
-        //   if (teamDetails.style.display === "none") {
-        //     teamDetails.style.display = "block";
-        //   } else {
-        //     teamDetails.style.display = "none";
-        //   }
-        // });
+        teamsContainer.appendChild(infoDiv);        
+        const teamName = infoDiv.querySelector(".team-name");
+        const teamDetails = infoDiv.querySelector(".team-details");
+        teamName.addEventListener("click", () => {
+          if (teamDetails.style.display === "none") {
+            teamDetails.style.display = "block";
+          } else {
+            teamDetails.style.display = "none";
+          }
+        });
       });
-// commentForm.addEventListener("submit", (e) => {
-//         e.preventDefault();
-//         const commentText = commentInput.value;
-//         if (commentText) {
-//           const teamsDetails = document.querySelectorAll(".team-details");
-//           teamsDetails.forEach(teamDetails => {
-//             if (teamDetails.style.display === "block") {
-//               const commentsSection = teamDetails.querySelector(".comments");
-//               const commentElement = document.createElement("div");
-//               commentElement.className = "comment";
-//               commentElement.textContent = commentText;
-//               commentsSection.appendChild(commentElement);
-//             }
-//           });
-//           commentInput.value = "";
-//         }
-//       });
+commentForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const commentText = commentInput.value;
+        if (commentText) {
+          const teamsDetails = document.querySelectorAll(".team-details");
+          teamsDetails.forEach(teamDetails => {
+            if (teamDetails.style.display === "block") {
+              const commentsSection = teamDetails.querySelector(".comments");
+              const commentElement = document.createElement("div");
+              commentElement.className = "comment";
+              commentElement.textContent = commentText;
+              commentsSection.appendChild(commentElement);
+            }
+          });
+          commentInput.value = "";
+        }
+      });
   });
 });
